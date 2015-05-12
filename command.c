@@ -37,7 +37,7 @@ int32_t cmd_pool_create(void)
 
 
 #ifdef DEBUG_POOL
-void        cmd_pool_info(void)
+void cmd_pool_info(void)
 {
     struct pool_head *entry = cmd_head_pool;
     printf("pool %s (%d bytes) : %d allocated (%u bytes), %d used\n",entry->name, entry->size, entry->allocated,entry->size * entry->allocated, entry->used);

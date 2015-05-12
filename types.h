@@ -15,9 +15,9 @@ extern "C" {
 #define    BUFFER_SIZE 256
 
 /* 1，pools池相关 */
-#define POOL_CREATE_ERROR -1
-#define POOL_DESTROY_ERROR -2
-#define CMD_POOL_ALLOC_ERROR -3
+#define POOL_CREATE_ERROR 0x200
+#define POOL_DESTROY_ERROR 0x201
+#define CMD_POOL_ALLOC_ERROR 0x202
 
 
 /* 2，命令相关*/
